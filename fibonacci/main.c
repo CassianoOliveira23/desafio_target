@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /* 
-	1) Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores 
+	1) Dado a sequï¿½ncia de Fibonacci, onde se inicia por 0 e 1 e o prï¿½ximo valor sempre serï¿½ a soma dos 2 valores anteriores 
 	(exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), 
-	escreva um programa na linguagem que desejar onde, informado um número,
-	ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.
+	escreva um programa na linguagem que desejar onde, informado um nï¿½mero,
+	ele calcule a sequï¿½ncia de Fibonacci e retorne uma mensagem avisando se o nï¿½mero informado pertence ou nï¿½o a sequï¿½ncia.
 
-	IMPORTANTE: Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
+	IMPORTANTE: Esse nï¿½mero pode ser informado atravï¿½s de qualquer entrada de sua preferï¿½ncia ou pode ser previamente definido no cï¿½digo;
 
  */
  
@@ -15,8 +15,7 @@
  int fibonacci(int num){
  	if(num == 0 || num == 1){
  		return num;
-	}
-	else{
+	}else{
 		return fibonacci(num - 1) + fibonacci(num-2);
 	}
  }
@@ -38,7 +37,7 @@ int main(int argc, char *argv[]) {
     int num = 21; 
     
    
-    printf("A sequência de Fibonacci até o número %d é:\n", num);
+    printf("A sequï¿½ncia de Fibonacci atï¿½ o nï¿½mero %d ï¿½:\n", num);
     for (i = 0; fibonacci(i) <= num; i++) {
         printf("%d ", fibonacci(i));
     }
@@ -46,9 +45,9 @@ int main(int argc, char *argv[]) {
     
 
     if (pertence_fibonacci(num)) {
-        printf("O número %d pertence à sequência de Fibonacci.\n", num);
+        printf("O nï¿½mero %d pertence ï¿½ sequï¿½ncia de Fibonacci.\n", num);
     } else {
-        printf("O número %d não pertence à sequência de Fibonacci.\n", num);
+        printf("O nï¿½mero %d nï¿½o pertence ï¿½ sequï¿½ncia de Fibonacci.\n", num);
     }
 
 	
